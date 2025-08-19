@@ -699,7 +699,11 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
-  
+    .portfolio-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
   .portfolio-card {
     overflow: hidden;
     transition: all 0.3s var(--ease-smooth);
@@ -717,6 +721,45 @@
     object-fit: cover; /* Ensures the image fully covers the container */
     transition: transform 0.3s var(--ease-smooth);
 }
+
+
+
+
+
+.portfolio-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.portfolio-image1 {
+  width: 100%;  /* take full width of the card */
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-video {
+  width: 100%;        /* video fills the card */
+  height: 100%;      /* fixed height (like images) */
+  object-fit: cover;  /* crop to fit neatly */
+  border-radius: 1rem;
+  display: block;
+}
+
+
+
+
+
+
+
 .portfolio-img:hover {
     transform: scale(1.05); /* Optional: Add a hover effect for better visuals */
 }
