@@ -148,7 +148,7 @@
   }
   
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: none;
   }
   
   .animate-slide-up {
@@ -421,11 +421,11 @@
   }
   
   .hero-img {
-    width: 80%; /* Adjust the size as needed */
+    width: 100%; /* Adjust the size as needed */
     height: 100%; /* Adjust the size as needed */
     object-fit: cover; /* Ensures the image maintains its aspect ratio */
     margin: auto; /* Centers the image inside the container */
-    transform: translate(30px, 30px); /* Moves the image 10px right and 10px down */
+    transform: translate(0px, 0px); /* Moves the image 10px right and 10px down */
 }
   
   /* Section Styles */
