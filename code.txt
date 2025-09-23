@@ -673,10 +673,6 @@
     </div>
   </div>
 </section>
-<div id="imgPopup" class="popup">
-  <span class="closeBtn">&times;</span>
-  <img class="popup-content" id="popupImg">
-</div>
 
     </main>
 
@@ -693,34 +689,6 @@
 
 
     <!-- JavaScript -->
-<script>
-  // Get popup elements
-  const popup = document.getElementById("imgPopup");
-  const popupImg = document.getElementById("popupImg");
-  const closeBtn = document.querySelector(".closeBtn");
 
-  // Select all portfolio images
-  const images = document.querySelectorAll(".portfolio-img");
-
-  // Open popup when image clicked
-  images.forEach(img => {
-    img.addEventListener("click", function() {
-      popup.style.display = "block";
-      popupImg.src = this.src;
-    });
-  });
-
-  // Close popup on button click
-  closeBtn.addEventListener("click", function() {
-    popup.style.display = "none";
-  });
-
-  // Also close when clicking outside image
-  popup.addEventListener("click", function(e) {
-    if (e.target === popup) {
-      popup.style.display = "none";
-    }
-  });
-</script>
 </body>
 </html>

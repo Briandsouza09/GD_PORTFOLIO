@@ -726,6 +726,99 @@
 
 
 
+
+
+/* Portfolio section layout */
+.portfolio11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Grid column layout */
+.portfolio-grid11 {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center horizontally */
+  gap: 30px;              /* space between cards */
+  width: 100%;
+}
+
+/* Portfolio card style */
+/* Portfolio card style */
+.portfolio-card {
+  width: 100%;       /* keeps spacing on sides */
+  margin: 0 auto;   /* centers it */
+  text-align: center;
+}
+
+
+
+/* Popup background */
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* Popup image */
+.popup-content {
+  margin-top: 5%;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closeBtn:hover {
+  color: #ff4444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio-grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
